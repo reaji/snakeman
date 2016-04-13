@@ -241,8 +241,6 @@ function updateState() {
   } else if (player.score == maxScore) {
     player.win();
     scorediv.innerHTML += ' YOU WIN!';
-    alert("YOU WIN!!!!  HOWEVER, YOU ARE ENTERING LEVEL2-The Hell Level");
-    window.location.href = "level2/index.html";
   }
 }
 
@@ -265,5 +263,5 @@ function spawnMonster() {
 function gainLife() {
   if (player.life >= maxLives) return;
   player.life++;
-  // spawnMonster();
+  spawnMonster();
 }
