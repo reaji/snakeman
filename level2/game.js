@@ -30,7 +30,7 @@ var columns = 17;
 var rows = 11;
 
 var pathColor = 0x95CFB7;
-var wallColor = 0xFF823A;
+var wallColor = 0xFF0000;
 var dotColor = 0xF2F26F;
 var monsterColor = 0xF04155;
 var playerColor = 0xFFF7BD;
