@@ -67,9 +67,9 @@ function update() {
   drawDots();
   drawPlayer();
   drawMonsters();
-  checkCollisions();
   updateMonster();
   updateState();
+  checkCollisions();
 }
 
 function onKeyDown(event) {
@@ -241,8 +241,8 @@ function updateState() {
   } else if (player.score == maxScore) {
     player.win();
     scorediv.innerHTML += ' YOU WIN!';
-    alert("YOU WIN!!!!  HOWEVER, YOU ARE ENTERING LEVEL2-The Hell Level");
     window.location.href = "level2/index.html";
+    alert("YOU WIN!!!!  HOWEVER, YOU ARE ENTERING LEVEL2-The Hell Level");
   }
 }
 
